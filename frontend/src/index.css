@@ -1,0 +1,405 @@
+@import "tailwindcss";
+
+/* 🔥 Futuristic Animated Background */
+.main-bg {
+  background: linear-gradient(-45deg, #0b0e14, #101522, #172337, #0b0e14);
+  background-size: 400% 400%;
+  animation: neonBackground 9s ease infinite;
+}
+@keyframes neonBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🔹 Heading Animation */
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 220% 220%;
+  animation: gradient-flow 3.5s ease infinite;
+}
+
+/* 🤖 Robot Glowing */
+@keyframes glow-image {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 8px #00eaff);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 28px #00eaff);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 8px #00eaff);
+  }
+}
+.glowing-robot {
+  animation: glow-image 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.glowing-robot:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0px 0px 35px #00eaff);
+}
+
+/* 🚀 Get Started Button */
+.get-started-btn {
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #00eaff;
+  border-radius: 12px;
+  background: rgba(0, 234, 255, 0.05);
+  color: #00eaff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0 0 10px #00eaff);
+}
+.get-started-btn:hover {
+  transform: scale(1.06);
+  background: rgba(0, 234, 255, 0.15);
+  filter: drop-shadow(0 0 20px #00eaff);
+}
+
+/* Arrow Animation */
+@keyframes arrowPulse {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(8px); }
+  100% { transform: translateX(0px); }
+}
+.arrow {
+  font-size: 1.3rem;
+  animation: arrowPulse 1.2s infinite ease-in-out;
+}
+
+
+/* 10x Faster Glowing Animation */
+@keyframes pulseGlow {
+  0% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 8px #f478fd); 
+  }
+  50% { 
+    transform: scale(1.05); 
+    filter: drop-shadow(0 0 22px #00eaff); 
+  }
+  100% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 8px #f478fd); 
+  }
+}
+
+.animated-learn-text {
+  background: linear-gradient(90deg, #f478fd, #00eaff, #f478fd);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation:
+    pulseGlow 2.5s ease-in-out infinite, 
+    gradient-move 5s ease infinite;
+}
+
+/* subtle moving gradient */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+/* MAIN BACKGROUND */
+.main-bg {
+  background: linear-gradient(-45deg, #0b0e14, #101522, #172337, #0b0e14);
+  background-size: 400% 400%;
+  animation: neonBackground 9s ease infinite;
+}
+@keyframes neonBackground {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+/* HEADING GRADIENT ANIMATION */
+.animate-gradient {
+  background-size: 220% 220%;
+  animation: gradient-flow 3.5s ease infinite;
+}
+@keyframes gradient-flow {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* LEARN 10X ANIMATION */
+@keyframes pulseGlow {
+  0% { transform: scale(1); filter: drop-shadow(0 0 8px #f478fd); }
+  50% { transform: scale(1.05); filter: drop-shadow(0 0 22px #00eaff); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 8px #f478fd); }
+}
+.animated-learn-text {
+  background: linear-gradient(90deg, #f478fd, #00eaff, #f478fd);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: pulseGlow 2.5s ease-in-out infinite, gradient-flow 5s ease infinite;
+}
+
+/* GLOWING ROBOT */
+@keyframes glow-image {
+  0% { transform: scale(1); filter: drop-shadow(0px 0px 8px #00eaff); }
+  50% { transform: scale(1.05); filter: drop-shadow(0px 0px 28px #00eaff); }
+  100% { transform: scale(1); filter: drop-shadow(0px 0px 8px #00eaff); }
+}
+.glowing-robot {
+  animation: glow-image 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* GET STARTED BUTTON */
+.get-started-btn {
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #00eaff;
+  border-radius: 12px;
+  background: rgba(0, 234, 255, 0.05);
+  color: #00eaff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0 0 10px #00eaff);
+  position: relative;
+  overflow: hidden;
+}
+.get-started-btn:hover {
+  transform: scale(1.06);
+  background: rgba(0, 234, 255, 0.15);
+  filter: drop-shadow(0 0 20px #00eaff);
+}
+.get-started-btn::after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, #00eaff22, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.35s ease-out;
+}
+.get-started-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.arrow {
+  font-size: 1.3rem;
+  animation: arrowPulse 1.2s infinite ease-in-out;
+}
+@keyframes arrowPulse {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(8px); }
+  100% { transform: translateX(0px); }
+}
+
+/* AUTH UI (LOGIN AND SIGNUP) */
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 234, 255, 0.25);
+  padding: 32px 28px;
+  border-radius: 18px;
+  box-shadow: 0 0 18px #00eaff55;
+  backdrop-filter: blur(10px);
+}
+
+.auth-heading {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(90deg, #00eaff, #f478fd, #00eaff);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: neonHeading 4s infinite linear;
+}
+
+@keyframes neonHeading {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 234, 255, 0.3);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: #00eaff;
+  transition: 0.25s;
+}
+.auth-input:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 15px #00eaff;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #00eaff;
+  font-weight: 600;
+  color: #00eaff;
+  background: rgba(0, 234, 255, 0.1);
+  cursor: pointer;
+  transition: 0.25s;
+  text-shadow: 0 0 12px #00eaff;
+  position: relative;
+}
+.auth-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #00eaff;
+}
+.auth-text {
+  margin-top: 12px;
+  text-align: center;
+  color: #b1d6ff;
+}
+.auth-link {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+}
+.auth-link:hover {
+  color: #f478fd;
+}
+
+/* FLOATING BACKGROUND SHAPES */
+.auth-bg-decor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.circle1, .circle2, .circle3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  animation: floaty 8s infinite ease-in-out;
+}
+.circle1 {width:140px;height:140px;background:#00eaff;top:15%;left:10%;}
+.circle2 {width:200px;height:200px;background:#f478fd;bottom:20%;right:15%;}
+.circle3 {width:110px;height:110px;background:#00ff9d;bottom:10%;left:25%;}
+@keyframes floaty {
+  0% {transform:translateY(0px) translateX(0px);}
+  50% {transform:translateY(20px) translateX(12px);}
+  100% {transform:translateY(0px) translateX(0px);}
+}
+.auth-particle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background: #00eaff;
+  filter: blur(3px);
+  animation: floatParticle 3s infinite ease-in-out;
+  opacity: 0.4;
+}
+@keyframes floatParticle {
+  0% { transform: translateY(0px); opacity: 0.3; }
+  50% { transform: translateY(-10px); opacity: 0.6; }
+  100% { transform: translateY(0px); opacity: 0.3; }
+}
+
+/* Floating Full Navbar */
+.floating-full-navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 95%;
+  height: 70px;
+
+  background: rgba(226, 161, 111, 0.85);
+  backdrop-filter: blur(15px);
+
+  border-radius: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(226, 161, 111, 0.5);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 28px;
+
+  animation: navbarDrop 0.6s ease;
+  z-index: 2000;
+}
+
+/* Entry Animation */
+@keyframes navbarDrop {
+  from { transform: translate(-50%,-40px); opacity: 0; }
+  to { transform: translate(-50%,0px); opacity: 1; }
+}
+
+/* Brand Name */
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px #ffffffcc;
+}
+
+/* Icon Button Group */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Floating Button */
+.nav-btn {
+  background: rgba(255,255,255,0.13);
+  border: 2px solid rgba(255,255,255,0.4);
+  color: white;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.25s;
+}
+
+.nav-btn:hover {
+  scale: 1.13;
+  box-shadow: 0 0 15px rgba(255,255,255,0.8);
+}
+
+/* Dark Mode Navbar */
+.dark-navbar {
+  background: rgba(45, 45, 45, 0.95);
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
